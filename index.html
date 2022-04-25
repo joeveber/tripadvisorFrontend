@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/5c21040cf2.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/signin.js"></script>
 </head>
 <body>
     <header>
@@ -27,7 +28,7 @@
                 <div><i class="icon-pencil fa-lg"></i><span class="hide">Review</span></div>
                 <div><i class="icon-heart fa-lg"></i><span class="hide">Trips</span></div>
                 <div><i class="icon-notification_bell fa-lg"></i><span class="hide">Alerts</span></div>
-                <button>Sign in</button>
+                <button id="signinbutton">Sign in</button>
             </nav>
         </div>
     </header>
@@ -187,10 +188,11 @@
     </footer>
 
 <!-- MODAL -->
-    <div class="modal hidemodal">
+    <div class="modal hidden">
         <div class="form-container">
             <div>
                 <p>Formulaire de contact</p>
+                <h4 class="modalmsg hidden">Le message a bien été envoyé</h4>
                 <form id="contactForm">
                     <input type="text" name="firstname" id="firstname" placeholder="Prénom">
                     <input type="text" name="lastname" id="lastname" placeholder="Nom">

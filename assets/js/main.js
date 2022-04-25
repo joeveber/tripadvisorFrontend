@@ -1,9 +1,19 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Document chargé");
-    const contactForm = document.querySelector("#contactForm");
 
+///
+    const signinbutton = document.querySelector("signinbutton")
+    signinbutton.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        modal.classList.remove("hidden");
+});
+///
+
+
+    const contactForm = document.querySelector("#contactForm");
     const button = document.querySelector("button")
+    const h4 = document.querySelector("h4")
 
     contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -28,6 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("The form has been sent");
             button.removeAttribute("disabled");
             button.classList.remove("btn-disabled");
+            h4.classList.remove("hidden");
+            contactForm.reset();
         }
     });
 });

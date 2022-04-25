@@ -428,3 +428,13 @@ footer img {
 .btn-disabled {
     background-color: lightblue;
 }
+
+.modalmsg {
+    font-size: 14px;
+    text-align: center;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
