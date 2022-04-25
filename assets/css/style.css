@@ -366,8 +366,7 @@ footer img {
 /* MODAL */
 
 .modal {
-    background-color: black;
-    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.9);;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -421,10 +420,6 @@ footer img {
     cursor: pointer;
 }
 
-/* .hidemodal {
-    display: none;
-} */
-
 .btn-disabled {
     background-color: lightblue;
 }
@@ -437,4 +432,14 @@ footer img {
 
 .hidden {
     display: none;
+}
+
+#closemodal {
+    margin-top: 30px;
+    margin-left: 420px;
+    background-color: white;
+}
+
+#closemodal:hover {
+    cursor: pointer;
 }

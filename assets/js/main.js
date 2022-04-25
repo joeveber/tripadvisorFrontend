@@ -1,6 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Document chargé");
 
+
+/// - hide modal
+    const modalContent = document.querySelector(".modal");
+    const formModalContent = document.querySelector(".form-container");
+    const modalButton = document.querySelector("#signinbutton");
+    const closemodal = document.querySelector("#closemodal");
+  
+    modalButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      modalContent.classList.remove("hidden");
+    });
+    closemodal.addEventListener("click", () => {
+      modalContent.classList.add("hidden");
+    });
+    formModalContent.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+    });
+/// -- Send email
+
     const contactForm = document.querySelector("#contactForm");
     const button = document.querySelector("button")
     const h4 = document.querySelector("h4")
