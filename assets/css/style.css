@@ -424,3 +424,7 @@ footer img {
 /* .hidemodal {
     display: none;
 } */
+
+.btn-disabled {
+    background-color: lightblue;
+}
