@@ -1,16 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Document chargé");
 
-///
-    const signinbutton = document.querySelector("signinbutton")
-    signinbutton.addEventListener("click", async (event) => {
-        event.preventDefault();
-
-        modal.classList.remove("hidden");
-});
-///
-
-
     const contactForm = document.querySelector("#contactForm");
     const button = document.querySelector("button")
     const h4 = document.querySelector("h4")
