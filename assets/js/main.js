@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ///
     const signinbutton = document.querySelector("signinbutton")
-    signinbutton.addEventListener("submit", async (event) => {
+    signinbutton.addEventListener("click", async (event) => {
         event.preventDefault();
 
         modal.classList.remove("hidden");
